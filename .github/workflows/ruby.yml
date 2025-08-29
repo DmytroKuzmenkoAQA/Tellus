@@ -15,9 +15,9 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-      - name: Set up environment variables
-        run: echo "GIPHY_API_KEY=${{ secrets.GIPHY_API_KEY }}" >> $GITHUB_ENV
       - name: Install dependencies
         run: bundle install
       - name: Run tests
+        env:
+          GIPHY_API_KEY: ${{ secrets.GIPHY_API_KEY }}
         run: bundle exec rspec
