@@ -61,3 +61,5 @@ bundle exec rubocop
 - **Never commit your real `.env` file or API keys.**
 - This project is for educational and demonstration purposes.
 # Tellus
+
+test

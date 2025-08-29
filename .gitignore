@@ -1,0 +1,25 @@
+
+# Environment
+.env
+.env.*
+
+# Editor & IDE
+.vscode/
+.ruby-lsp/
+
+# Ruby
+/coverage/
+/tmp/
+/log/
+/.bundle/
+.byebug_history
+
+# System
+.DS_Store
+
+# Swap/backup
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log

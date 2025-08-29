@@ -1,0 +1,20 @@
+# .rubocop.yml
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'db/schema.rb'
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - 'spec/fixtures/**/*'
+    - 'spec/support/**/*'
+    - 'coverage/**/*'
+    - 'tmp/**/*'
+    - '.bundle/**/*'
+    - '.vscode/**/*'
+    - '.ruby-lsp/**/*'
+    - '*.gemspec'
+    - 'Gemfile.lock'
+    - '.env*'
+
+Layout/LineLength:
+  Max: 120
